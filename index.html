@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Kashyap - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease;
+        }
+        
+        header p {
+            font-size: 1.5em;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            margin: 40px auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        section {
+            margin-bottom: 60px;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .skill-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .project-card h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .project-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .contact {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 15px;
+        }
+        
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            margin: 0 15px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .contact a:hover {
+            opacity: 0.7;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            
+            .content {
+                padding: 30px;
+            }
+            
+            h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Saurav Kashyap</h1>
+            <p>Developer | Designer | Creator</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Saurav Kashyap, a passionate developer and creative problem solver. 
+                    I love building innovative solutions and bringing ideas to life through code. 
+                    With a strong foundation in modern web technologies and a keen eye for design, 
+                    I create experiences that are both functional and beautiful.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill-card">
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, JavaScript, React, Node.js</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Design</h3>
+                        <p>UI/UX, Responsive Design, Figma</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Backend</h3>
+                        <p>APIs, Databases, Cloud Services</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools</h3>
+                        <p>Git, VS Code, Docker, CI/CD</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project-card">
+                        <h3>Project One</h3>
+                        <p>
+                            A full-stack web application that solves real-world problems 
+                            with an intuitive interface and robust backend architecture.
+                        </p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Two</h3>
+                        <p>
+                            An innovative mobile-first solution featuring modern design 
+                            principles and seamless user experience.
+                        </p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Three</h3>
+                        <p>
+                            A creative tool that empowers users to achieve their goals 
+                            through automation and intelligent features.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact">
+                <h2 style="color: white; border-color: white;">Get In Touch</h2>
+                <p style="font-size: 1.2em; margin: 20px 0;">Let's work together!</p>
+                <div>
+                    <a href="mailto:sauravkashyap521@gmail.com">📧 Email</a>
+                    <a href="https://github.com/sauravkashyap521" target="_blank">💻 GitHub</a>
+                    <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
